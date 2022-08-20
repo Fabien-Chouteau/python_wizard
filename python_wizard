@@ -53,7 +53,7 @@ parser.add_argument("-m", "--subMultipleThreshold",
     type=float)
 parser.add_argument("-f", "--outputFormat",
     help="Output file format",
-    choices=["arduino", "C", "hex", "python"],
+    choices=["arduino", "C", "Ada", "hex", "python"],
     default="hex")
 parser.add_argument("-T", "--tablesVariant",
     help="Tables variant",
