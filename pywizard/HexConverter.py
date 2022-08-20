@@ -34,7 +34,10 @@ class HexConverter(object):
         '''
         result = []
         for u,l in zip(nibbles[0::2], nibbles[1::2]):
-            raw = (u+l)[::-1]
+            if settings.nonInvertedBits:
+                raw = (u+l)
+            else:
+                raw = (u+l)[::-1]
             result.append(int(raw, base=2))
         return result
 

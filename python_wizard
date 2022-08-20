@@ -41,6 +41,9 @@ parser.add_argument("-a", "--preEmphasisAlpha",
 parser.add_argument("-d", "--debug",
     help="Enable (lots) of debug output",
     action="store_true")
+parser.add_argument("-I", "--nonInvertedBits",
+    help="Disable bit invertion to produce data faster to decode",
+    action="store_true")
 parser.add_argument("-r", "--pitchRange",
     help="Comma separated range of available voice pitch in Hz. Default: 50,500",
     default="50,500")

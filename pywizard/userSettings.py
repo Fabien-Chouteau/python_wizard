@@ -24,6 +24,7 @@ class userSettings(object):
     outputFormat = "arduino"
     rmsLimit = 14
     tablesVariant = "tms5100"
+    nonInvertedBits = False
 
     def import_from_argparse(self, raw):
         v = vars(raw)
